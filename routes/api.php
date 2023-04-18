@@ -17,8 +17,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 //Routes for admins
-Route::group(['middleware' => ['auth:sanctum', 'admin']], function () {
-    Route::post('/registration', [AuthController::class, 'registration'])->name('registration');
+Route::group(['middleware' => []], function () {
+        Route::post('/registration', [AuthController::class, 'registration'])->name('registration');
 });
 
 
